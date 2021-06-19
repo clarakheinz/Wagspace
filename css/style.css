@@ -1,0 +1,36 @@
+/* Standard styles */
+* {
+    box-sizing: border-box;
+}
+
+body, h1, img {
+    margin: .75rem;
+    padding: 0;
+}
+
+div[class*="container"] {
+    border: #000 solid 2px;
+}
+
+/* Class Styles */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: .2rem;
+}
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+#name-pic {
+    display: flex;
+    flex-direction: column;
+}
+
+#status {
+    align-self: center;
+}
+/* Media Queries */
