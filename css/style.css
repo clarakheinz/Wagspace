@@ -10,19 +10,28 @@ body, h1, img {
 
 div[class*="container"] {
     border: #000 solid 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: .5rem;
 }
 
 /* Class Styles */
 .main-container {
-    display: flex;
     flex-direction: column;
     margin: .5rem;
     padding: .2rem;
 }
+.user-name {
+    font-size: 3rem;
+}
+.section-title {
+    display: block;
+    width:100%;
+    font-size: 2.25rem;
+}
 .profile-container {
-    display: flex;
     flex-direction: row;
-    justify-content:space-around;
 }
 
 #name-pic {
@@ -32,5 +41,21 @@ div[class*="container"] {
 
 #status {
     align-self: center;
+    font-size: 1.5rem;
+    font-style: italic;
 }
+
+.actions-container ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    font-size: 1.75rem;;
+}
+
+.friend-name {
+    font-size: 1.75em;
+    text-align: center;
+}
+
 /* Media Queries */
