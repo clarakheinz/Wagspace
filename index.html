@@ -5,44 +5,54 @@
         <title>Wagspace</title>
         <link rel="stylesheet" href="css/style.css">
         <!-- <script defer type="text/javascript" src="js/scripts.js"></script> -->
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
     <body>
-        <header>
+        <header class="container" id="header-container">
             <!--Nave bar and logo?-->
+            <h1>Wagspace</h1>
+            <nav class="main-nav">
+                <ul id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Page</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
             <!--5 flexboxes, in column orientation by default-->
-            <div class="main-container">
-                <div class="profile-container">
+            <div class="container" id="main-container">
+                <div class="container" id="profile">
                     <!--Name, Profile pic, mini status-->
                     <div id="name-pic">
                         <h1 class="user-name">Thor</h1>
                         <img class="profile-pic" src="http://placekitten.com/200/300">
                     </div>
                     <div id="status">
-                        <h3>Status:</h3>
                         <p>Doing what the goodest boi does.</p>
                     </div>
                 </div>
-                <div class="actions-container">
-                    <!--Message, add friend, invite??-->
-                    <ul>
-                        <li>Message</li>
-                        <li>Add Friend</li>
-                        <li>Invite</li>
-                    </ul>
+                <div class="media2 container">
+                    <div class="container" id="actions-container">
+                        <!--Message, add friend, invite??-->
+                        <ul>
+                            <li>Message</li>
+                            <li>Add Friend</li>
+                            <li>Invite</li>
+                        </ul>
+                    </div>
+                    <div class="container" id="stats-container">
+                        <!-- About me, likes, etc-->
+                        <h3 class="section-title">About Thor</h3>
+                        <h5>Hi there! I'm Thor, the goodest boi as my mom says.</h5>
+                        <!--create tble of age, sex, breed, etc.-->
+                        <p>Oh boy, I love meeting new people and getting them to play fetch with me. 
+                            I've never met a stranger! I always have good manners greet everyone with a good 
+                            sniff of the tush. Running around like a new born pup is all I ever do. 
+                            Want to join me? Send me a message!</p>
+                    </div>
                 </div>
-                <div class="stats-container">
-                    <!-- About me, likes, etc-->
-                    <h3 class="section-title">About Me & Interests</h3>
-                    <h5>Hi there! I'm Thor, the goodest boi as my mom says.</h5>
-                    <!--create tble of age, sex, breed, etc.-->
-                    <p>Oh boy, I love meeting new people and getting them to play fetch with me. 
-                        I've never met a stranger! I always have good manners greet everyone with a good 
-                        sniff of the tush. Running around like a new born pup is all I ever do. 
-                        Want to join me? Send me a message!</p>
-                </div>
-                <div class="friends-container">
+                <div class="container" id="friends-container">
                     <!-- top X friends, images and names-->
                     <h3 class="section-title">
                         Thor's Top Friends
@@ -59,6 +69,7 @@
                         <img src="http://placekitten.com/200/200">
                         <figcaption class="friend-name">Friend</figcaption>
                     </figure>
+                    <div class="break"></div>
                     <figure class="friend">
                         <img src="http://placekitten.com/200/200">
                         <figcaption class="friend-name">Friend</figcaption>
@@ -73,7 +84,7 @@
                     </figure>
 
                 </div>
-                <div class="pics-container">
+                <div class="container" id="pictures-container">
                     <!--handful of featured pics with like functionality-->
                     <h3 class="section-title">Thor's Pictures</h3>
                     <img src="http://placekitten.com/200/200">
@@ -82,7 +93,9 @@
                 </div>
             </div>
         </main>
-        <footer><!--Wagspace Copyright, maybe logo and my contact info--></footer>
+        <footer><!--Wagspace Copyright, maybe logo and my contact info-->
+            <p>&copy; 2021 Clara Heinz</p>
+        </footer>
     </body>
 
 </html>
