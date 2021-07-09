@@ -51,14 +51,19 @@ footer {
 
 .content-container {
     margin-bottom: 2.5rem;
-    border: lightgray 2px solid;
-    border-radius: 10px;
     padding: 0.5rem;
 }
 
-.content-container:hover {
+.content-container:not(#actions-container) {
+    border: #184c34 2px solid;
+    border-radius: 10px;
+    transition: transform 0.25s ease-in-out;
+}
+
+.content-container:not(#actions-container):hover {
     border-color: white;
-    box-shadow: 0px 10px 10px lightgray;
+    box-shadow: 0px 10px 10px #184c34;
+    transform: scale(1.05);
 }
 
 #header-container {
@@ -70,10 +75,27 @@ footer {
 }
 
 .logo-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.web-title {
     font: bold 2.5rem Handlee;
     color:#0ebd60;
     margin-bottom: 0.25rem;
+}
 
+.logo {
+    max-width: 33px;
+    object-fit: scale-down;
+    padding-left: .5rem;
+    padding-top: .75rem;
+    transform: rotate(25deg)
+}
+
+.logo1 {
+    display: none;
 }
 
 #nav-menu {
@@ -117,7 +139,9 @@ footer {
 
 
 .user-name {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    align-self: center;
+    margin: 0.75rem;
 }
 
 .section-title {
@@ -126,6 +150,7 @@ footer {
     font-size: 1.5rem;
     padding-left: 0.75em;
     text-transform: uppercase;
+    margin: 1.25rem 0 1rem 0;
 }
 
 #profile {
@@ -136,7 +161,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
 
 #status {
     align-self: center;
@@ -152,11 +176,6 @@ footer {
 
 .profile-pic {
     border-radius: 150px;
-    transition: transform 0.25s ease-in-out;
-}
-
-.profile-pic:hover {
-    transform: scale(1.25);
 }
 
 #actions-container ul {
@@ -164,9 +183,24 @@ footer {
     justify-content: space-evenly;
     width: 100%;
     list-style: none;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin: 0.5rem;
     padding: 0.5rem;
+}
+
+#actions-container li {
+
+    font-family: Handlee;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #0ebd60;
+    color: #eff4ed;
+    border-radius: 10px;
+}
+
+#actions-container li:hover {
+    background-color: #184c34;
 }
 
 #stats-container h5 {
@@ -184,9 +218,11 @@ footer {
 .break {
     display:none;
 }
+
 #friends-container {
     padding: 0;
 }
+
 #friends-container figure {
     display: flex;
     flex-direction: column;
@@ -228,8 +264,19 @@ footer {
     header {
         max-height: 80px;
     }
-    .logo-header {
+    .web-title {
         color: #eff4ed;
+    }
+
+    .logo {
+        padding-top: 0;
+    }
+    .logo1 {
+        display: unset;
+    }
+
+    .logo2 {
+        display: none;
     }
 
     #nav-menu {
@@ -300,9 +347,6 @@ footer {
 
 @media (min-width: 750px) and (max-width: 999px){
     /* make stats and actions column with profile picture/name */
-    header {
-        max-height: 80px;
-    }
 
     #main-container {
         flex-direction: row;
