@@ -1,24 +1,43 @@
+/* color scheme
+bright green: #0ebd60
+gray: cad1c9
+dark green: 184c34
+cream green: eff4ed
+*/
+
 /* Standard styles */
 * {
     box-sizing: border-box;
 }
 
-body, h1, img {
-    margin: .75rem;
+body {
+    margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 header {
     width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 main {
     display: flex;
     flex-grow: 1;
 }
-div[class*="container"] {
-    border: #000 solid 2px;
+
+h1, h3{
+    font: bold 1.5rem Handlee;
 }
+
+footer {
+    color: #184c34;
+    padding: .5rem;
+}
+
+/* div[class*="container"] {
+    border: #000 solid 2px;
+} */
 
 
 
@@ -27,14 +46,34 @@ div[class*="container"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: .5rem;
     width: 100%;
+}
+
+.content-container {
+    margin-bottom: 2.5rem;
+    border: lightgray 2px solid;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.content-container:hover {
+    border-color: white;
+    box-shadow: 0px 10px 10px lightgray;
 }
 
 #header-container {
     flex-direction: column;
     justify-content: space-center;
     align-content: center;
+    padding: 0 0.75rem;
+
+}
+
+.logo-header {
+    font: bold 2.5rem Handlee;
+    color:#0ebd60;
+    margin-bottom: 0.25rem;
+
 }
 
 #nav-menu {
@@ -46,47 +85,47 @@ div[class*="container"] {
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   
   #nav-menu li {
     display: flex;
     justify-content: center;
+    margin: 0.25rem;
     width: 100%;
-    margin: 0;
-    padding: 0.25rem;
   }
   
   #nav-menu li a {
     display: inline-block;
-    padding: 1.25rem 1.5rem;
-    border-bottom: 2px solid black;
+    padding: 1.05rem 1.15rem;
     text-decoration: none;
     text-align: center;
     width: 100%;
-  }
-  
-  #nav-menu li a:hover {
-    border-bottom-color: chartreuse;
-    background-color: #3f51b5;
+    color: #0ebd60;
   }
 
+  #nav-menu li a:hover {
+    background-color: #0ebd60;
+    color: #eff4ed;
+  }
+  
 
 #main-container {
     flex-direction: column;
-    margin: .5rem;
-    padding: .25rem;
+    padding: .5rem;
 }
 
+
 .user-name {
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 .section-title {
     display: block;
     width:100%;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     padding-left: 0.75em;
+    text-transform: uppercase;
 }
 
 #profile {
@@ -98,15 +137,26 @@ div[class*="container"] {
     flex-direction: column;
 }
 
+
 #status {
     align-self: center;
     font-style: italic;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
+    width: 35%;
 }
 
 #status h3 {
     margin-bottom: 0;
     padding: 0;
+}
+
+.profile-pic {
+    border-radius: 150px;
+    transition: transform 0.25s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.25);
 }
 
 #actions-container ul {
@@ -120,13 +170,13 @@ div[class*="container"] {
 }
 
 #stats-container h5 {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     margin: 0.2rem;
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 
 #stats-container p {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
     text-align: justify;
     padding: 0 1.75rem;
     margin: .45rem .25rem;
@@ -145,7 +195,7 @@ div[class*="container"] {
 }
 
 .friend-name {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     text-align: center;
 }
 
@@ -156,6 +206,7 @@ div[class*="container"] {
 
 #friends-container img {
     max-width:100px;
+    border-radius: 100px;
 }
 
 /* Media Queries */
@@ -170,6 +221,15 @@ div[class*="container"] {
         width: 100%;
         justify-content: space-between;
         align-content: center;
+        background-color: #0ebd60;
+        color: #eff4ed;
+    }
+
+    header {
+        max-height: 80px;
+    }
+    .logo-header {
+        color: #eff4ed;
     }
 
     #nav-menu {
@@ -177,8 +237,18 @@ div[class*="container"] {
         width: 100%;
     }
 
+    #nav-menu li {
+        width: unset;
+    }
+    
+    #nav-menu li a:hover {
+    background-color: #eff4ed;
+    color: #184c34;
+    }
+
     #nav-menu li a {
         width: 100%;
+        color: #eff4ed;
     }
 
     #main-container {
@@ -191,9 +261,8 @@ div[class*="container"] {
 
     .media2 {
         width: 45%;
-        flex-direction: column;
-        flex-wrap: nowrap;
     }
+
     #stats-container {
         order: -1;
     }
@@ -231,6 +300,10 @@ div[class*="container"] {
 
 @media (min-width: 750px) and (max-width: 999px){
     /* make stats and actions column with profile picture/name */
+    header {
+        max-height: 80px;
+    }
+
     #main-container {
         flex-direction: row;
     }
@@ -242,7 +315,9 @@ div[class*="container"] {
         width: 45%;
         flex-direction: column;
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
+
     #stats-container {
         order: -1;
     }
