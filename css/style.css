@@ -184,12 +184,11 @@ footer {
     width: 100%;
     list-style: none;
     font-size: 1.15rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
 }
 
 #actions-container li {
-
+    display: flex;
+    align-items: center;
     font-family: Handlee;
     font-weight: bold;
     text-decoration: none;
@@ -197,6 +196,9 @@ footer {
     background-color: #0ebd60;
     color: #eff4ed;
     border-radius: 10px;
+    padding: .75rem;
+    margin: .25rem;
+    text-align: center;
 }
 
 #actions-container li:hover {
@@ -325,8 +327,8 @@ footer {
         padding: 0.05rem;
         margin: 0;
         justify-content: space-evenly;
-        align-items: center;
     }
+
     #actions-container li {
         padding: 1.2rem;
     }
@@ -377,10 +379,9 @@ footer {
         padding: 0.05rem;
         margin: 0;
         justify-content: space-evenly;
-        align-items: center;
     }
     #actions-container li {
-        padding: 1.2rem;
+        padding: 1rem;
     }
 
     .break {
