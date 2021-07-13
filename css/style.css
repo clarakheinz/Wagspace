@@ -227,7 +227,7 @@ footer {
 
 
 .break {
-    display:none;
+    width: 100%;
 }
 
 #friends-container {
@@ -239,6 +239,10 @@ footer {
     flex-direction: column;
     padding: .25rem;
     margin: 0.5rem;
+}
+
+#friends-container figure:nth-of-type(3)::after {
+    clear:left;
 }
 
 .friend-name {
@@ -263,11 +267,11 @@ footer {
     /* make nav horizontal, keep pictures and friend pics to 3 per row */
       /* navigation menu */
 
-      .content-container:not(#stats-container) {
+    .content-container:not(#stats-container) {
         margin-bottom: 2.5rem;
     }
 
-      #header-container {
+    #header-container {
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
@@ -279,6 +283,7 @@ footer {
     header {
         max-height: 80px;
     }
+
     .web-title {
         color: #eff4ed;
     }
@@ -286,6 +291,7 @@ footer {
     .logo {
         padding-top: 0;
     }
+
     .logo1 {
         display: unset;
     }
@@ -351,10 +357,6 @@ footer {
         padding: 1.2rem;
     }
 
-    .break {
-        display:block;
-        width: 100%;
-    }
     #friends-container img {
         max-width: 150px;
     }
@@ -363,7 +365,7 @@ footer {
         max-width:unset;
         padding: 1.25rem;
     } 
-  }
+}
 
 @media (min-width: 750px) and (max-width: 999px){
     /* make stats and actions column with profile picture/name */
@@ -404,11 +406,6 @@ footer {
     }
     #actions-container li {
         padding: 1rem;
-    }
-
-    .break {
-        display: block;
-        width:100%;
     }
 
     #friends-container figure {
