@@ -50,8 +50,8 @@ footer {
 }
 
 .content-container {
-    margin-bottom: 2.5rem;
     padding: 0.5rem;
+    margin-bottom: 2.5rem;;
 }
 
 .content-container:not(#actions-container) {
@@ -211,6 +211,7 @@ footer {
     background-color: #184c34;
 }
 
+
 #stats-container h5 {
     font-size: 1.15rem;
     margin: 0.2rem;
@@ -223,6 +224,8 @@ footer {
     padding: 0 1.75rem;
     margin: .45rem .25rem;
 }
+
+
 .break {
     display:none;
 }
@@ -260,7 +263,11 @@ footer {
     /* make nav horizontal, keep pictures and friend pics to 3 per row */
       /* navigation menu */
 
-    #header-container {
+      .content-container:not(#stats-container) {
+        margin-bottom: 2.5rem;
+    }
+
+      #header-container {
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
@@ -324,6 +331,7 @@ footer {
 
     #stats-container {
         order: -1;
+        margin-bottom: 1.5rem;
     }
     #stats-container h5 {
         text-align: center;
@@ -359,6 +367,10 @@ footer {
 
 @media (min-width: 750px) and (max-width: 999px){
     /* make stats and actions column with profile picture/name */
+
+    .content-container:not(#stats-container) {
+        margin-bottom: 2.5rem;
+    }
 
     #main-container {
         flex-direction: row;
