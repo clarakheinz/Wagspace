@@ -91,7 +91,12 @@ footer {
     object-fit: scale-down;
     padding-left: .5rem;
     padding-top: .75rem;
-    transform: rotate(25deg)
+    transform: rotate(25deg);
+    transition: transform .5s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
 }
 
 .logo1 {
@@ -157,6 +162,11 @@ footer {
     flex-direction: row;
 }
 
+#profile-pic {
+    border-radius: 5%;
+    max-width: 250px;
+}
+
 #name-pic {
     display: flex;
     flex-direction: column;
@@ -172,10 +182,6 @@ footer {
 #status h3 {
     margin-bottom: 0;
     padding: 0;
-}
-
-.profile-pic {
-    border-radius: 150px;
 }
 
 #actions-container ul {
@@ -306,6 +312,10 @@ footer {
     
     #profile {
         width: 50%;
+    }
+
+    #profile-pic {
+        max-width: 300px;
     }
 
     .media2 {
