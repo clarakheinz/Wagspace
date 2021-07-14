@@ -190,6 +190,7 @@ footer {
     width: 100%;
     list-style: none;
     font-size: 1.15rem;
+    padding-left: 0;
 }
 
 #actions-container li {
