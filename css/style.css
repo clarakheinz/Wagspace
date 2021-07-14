@@ -241,23 +241,20 @@ footer {
     margin: 0.5rem;
 }
 
-#friends-container figure:nth-of-type(3)::after {
-    clear:left;
-}
-
 .friend-name {
     font-size: 1.05rem;
     text-align: center;
 }
 
-#pictures-container img {
-    padding: .5rem;
-    max-width: 200px;
-}
-
 #friends-container img {
     max-width:100px;
     border-radius: 100px;
+    min-height: 100px;
+}
+
+#pictures-container img {
+    padding: .5rem;
+    max-width: 200px;
 }
 
 /* Media Queries */
@@ -358,7 +355,7 @@ footer {
     }
 
     #friends-container img {
-        max-width: 150px;
+        max-width: 175px;
     }
 
     #pictures-container img {
@@ -415,7 +412,7 @@ footer {
     }
 
     #friends-container img {
-        max-width: 150px;
+        max-width: 175px;
     }
 
     #pictures-container img {

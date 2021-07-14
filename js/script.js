@@ -6,6 +6,21 @@ randomI = Math.floor(Math.random() * 4) + 1;
 //assign random source form profile-pic folder
 profileImg.src = `./img/profile-pic/thor-${randomI}.jpg`;
 
-//loop to fill friends and featured pics into respective elements by ID
+//loop to fill friends into respective elements by ID
+let friends = [
+    {name: "Georgia" , photo: "./img/friends/Georgia.jpeg"},
+    {name: "Loki" , photo: "./img/friends/Loki.jpeg"},
+    {name: "Tucker", photo: "./img/friends/Tucker.jpeg"},
+    {name: "Minnie", photo: "./img/friends/Minnie.JPG"},
+    {name: "Blue", photo: "./img/friends/Blue.jpeg"},
+    {name:"Lily", photo: "./img/friends/Lily.jpeg"}
+];
+
+let friendContainer = document.getElementsByClassName("friend");
+
+for (let i=0; i < friendContainer.length; i++) {
+    friendContainer[i].children[0].src = friends[i].photo;
+    friendContainer[i].children[1].innerHTML = friends[i].name;
+}
 
 //need javascript button functions
