@@ -21,7 +21,7 @@ let friendContainer = document.getElementById("friends-container");
 for (let i=0; i < friends.length; i++) {
     let newFriend = document.createElement("figure");
     newFriend.className = 'friend';
-    newFriend.innerHTML = `<img src="${friends[i].photo}"><figcaption class="friend-name">${friends[i].name}</figcaption>`;
+    newFriend.innerHTML = `<img src="${friends[i].photo}" alt="${friends[i].name} profile pic"><figcaption class="friend-name">${friends[i].name}</figcaption>`;
     friendContainer.appendChild(newFriend);
     if (i === 2) {
         friendContainer.innerHTML +=(`<div class="break"></div>`);
