@@ -1,10 +1,17 @@
 // need to create function to insert a random picture for profle
 //get html elemet
-let profileImg = document.getElementById('profile-pic');
-// get a random number
-randomI = Math.floor(Math.random() * 4) + 1;
-//assign random source form profile-pic folder
-profileImg.src = `./img/profile-pic/thor-${randomI}.jpg`;
+let profileContainer = document.getElementById('name-pic');
+//function to generate the random profile picture to insert
+function getProfilePic() {
+    randomI = Math.floor(Math.random() * 4) + 1;
+    let pic = document.createElement("img");
+    pic.id="profile-pic";
+    pic.src = `./img/profile-pic/thor-${randomI}.jpg`;
+    pic.alt = "Thor's profile picture (yellow labrador dog)";
+    profileContainer.appendChild(pic);
+}
+
+getProfilePic();
 
 //loop to fill friends into respective elements by ID
 let friends = [
