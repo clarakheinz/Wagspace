@@ -16,11 +16,16 @@ let friends = [
     {name:"Lily", photo: "./img/friends/Lily.jpeg"}
 ];
 
-let friendContainer = document.getElementsByClassName("friend");
+let friendContainer = document.getElementById("friends-container");
 
-for (let i=0; i < friendContainer.length; i++) {
-    friendContainer[i].children[0].src = friends[i].photo;
-    friendContainer[i].children[1].innerHTML = friends[i].name;
+for (let i=0; i < friends.length; i++) {
+    let newFriend = document.createElement("figure");
+    newFriend.className = 'friend';
+    newFriend.innerHTML = `<img src="${friends[i].photo}"><figcaption class="friend-name">${friends[i].name}</figcaption>`;
+    friendContainer.appendChild(newFriend);
+    if (i === 2) {
+        friendContainer.innerHTML +=(`<div class="break"></div>`);
+    }
 }
 
 //need javascript button functions
