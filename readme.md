@@ -9,4 +9,11 @@ As I build this website, I will update this README to include what skills I am d
 
 Skills demonstrated include:
 
-To be updated...
+1. Two media queries to adjust layout and content sizing for 2 different screen widths:
+    a. 1000px or greater screen width - Navigation becomes a row layout
+    b. 750px to 999px screen width - Main layout becomes 2 columns
+2. Use of FlexBox to control layout changes
+3. Navigation changes layout in response to screen widths
+4. JavaScript function to dynamically insert HTML code:
+    a. Insert a random profile picture from a set of 4
+    b. Insert friend profile pictures
