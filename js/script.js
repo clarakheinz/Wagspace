@@ -1,6 +1,6 @@
 // need to create function to insert a random picture for profle
 //get html elemet
-let profileContainer = document.getElementById('name-pic');
+let profileContainer = document.getElementById("name-pic");
 //function to generate the random profile picture to insert
 function getProfilePic() {
     randomI = Math.floor(Math.random() * 4) + 1;
@@ -28,11 +28,40 @@ let friendContainer = document.getElementById("friends-container");
 for (let i=0; i < friends.length; i++) {
     let newFriend = document.createElement("figure");
     newFriend.className = 'friend';
-    newFriend.innerHTML = `<img src="${friends[i].photo}" alt="${friends[i].name} profile pic"><figcaption class="friend-name">${friends[i].name}</figcaption>`;
+    newFriend.innerHTML = `<img src="${friends[i].photo}" alt="${friends[i].name}'s profile pic"><figcaption class="friend-name">${friends[i].name}</figcaption>`;
     friendContainer.appendChild(newFriend);
     if (i === 2) {
         friendContainer.innerHTML +=(`<div class="break"></div>`);
     }
 }
+
+// similar loop for featured pictures as profile-pic
+
+let featuredPics = [
+    {photo: "./img/featured-pics/featured-1.jpeg", alt: "Thor laying on a rug"},
+    {photo: './img/featured-pics/featured-2.jpg', alt: "Thor laying on his back like a person, sprawled out"},
+    {photo: './img/featured-pics/featured-3.jpeg', alt: "Thor looking sad while Loki sniffs at his whipped cream dessert"},
+    {photo: './img/featured-pics/featured-4.jpeg', alt: "Young Thor trying to sleep in too small a dog bed"},
+    {photo: './img/featured-pics/featured-5.jpeg', alt: "Baby Thor sleeping hard, conked out"},
+    {photo: './img/featured-pics/featured-6.jpg', alt: "Thor celerbating his first birthday with a cake, toys, and blue birthday hat"}, 
+    {photo: './img/featured-pics/featured-7.jpg', alt: "Young Thor with his corgi friend Spyro, lounging in the living room"},
+    {photo: './img/featured-pics/featured-8.jpg', alt: "Young Thor holding a toy in his mouth and balancing treats on his nose like a good boy"},
+    {photo: './img/featured-pics/featured-9.jpeg', alt: "Thor laying on the floor with his dachshund friends, Tucker and Georgia"},
+    {photo: './img/featured-pics/featured-10.jpg', alt: "Big Thor trying to play tug with a small beagle puppy, Scout"},
+    {photo: './img/featured-pics/featured-11.jpg', alt: "Young Thor looking out the window with Mjolnir at his paws"},
+    {photo: './img/featured-pics/featured-12.jpeg', alt: "Thor lounging with his dachshund girlfriend, Georgia"}
+];
+
+let featuredContainer = document.getElementById("pictures-container");
+function fillPictures() {
+    for (let i=0; i < featuredPics.length; i++) {
+        let pic = document.createElement("img");
+        pic.src = `${featuredPics[i].photo}`;
+        pic.alt = `${featuredPics[i].alt}`;
+        featuredContainer.appendChild(pic);
+    }
+}
+fillPictures();
+
 
 //need javascript button functions
