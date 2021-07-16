@@ -38,13 +38,21 @@
                         <p>Doing what the goodest boi does.</p>
                     </div>
                 </div>
+                <div class="modalContainer">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+                        <p id="add-friend-msg">Thor is now your friend!</p>
+                        <p id="already-friend">Thor is already your friend!</p>
+                        <p id="invite-msg">You can't invite Thor to anything right now.</p>
+                    </div>
+                </div>
                 <div class="media2 container">
                     <div class="container content-container" id="actions-container">
-                        <!--Message, add friend, invite??-->
+                        <!--Message, add friend, invite "buttons"-->
                         <ul>
                             <li id="open-form">Message</li>
-                            <li id="add-friend">Add Friend</li>
-                            <li id="invite">Invite</li>
+                            <li id="add-friend" onclick="addFriend()">Add Friend</li>
+                            <li id="invite" onclick="invite()">Invite</li>
                         </ul>
                     </div>
                     <div class="container content-container" id="stats-container">

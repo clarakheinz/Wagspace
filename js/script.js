@@ -65,3 +65,29 @@ fillPictures();
 
 
 //need javascript button functions
+
+//add friend
+let friend = false;
+let modal = document.querySelector(".modalContainer");
+function addFriend() {
+    modal.style.display = "block";
+    if (!friend) {
+        document.getElementById("add-friend-msg").style.display = "block";
+        friend = true;
+    } else {
+        document.getElementById("already-friend").style.display = "block";
+    }
+}
+
+function invite() {
+    modal.style.display = "block";
+    document.getElementById("invite-msg").style.display = "block";
+}
+
+let closeBtn = document.querySelector(".close-btn");
+closeBtn.onclick = function(){
+    modal.style.display = "none"
+    document.getElementById("add-friend-msg").style.display = "none";
+    document.getElementById("already-friend").style.display = "none";
+    document.getElementById("invite-msg").style.display = "none";
+}
