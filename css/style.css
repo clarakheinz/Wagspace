@@ -31,8 +31,10 @@ h1, h3{
 }
 
 footer {
-    color: #184c34;
+    background-color: #0ebd60;
+    color:#eff4ed;
     padding: .5rem;
+    flex-shrink: 0;
 }
 
 /* div[class*="container"] {
@@ -63,12 +65,12 @@ footer {
 .content-container:not(#actions-container):hover {
     border-color: white;
     box-shadow: 0px 10px 10px #184c34;
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 
 #header-container {
-    flex-direction: column;
-    justify-content: space-center;
+    flex-direction: row;
+    justify-content: space-between;
     align-content: center;
     padding: 0 0.75rem;
 
@@ -101,6 +103,51 @@ footer {
 
 .logo1 {
     display: none;
+}
+
+/* Nav styling */
+.main-nav {
+    position: fixed;
+    right: -100%;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    z-index: 10;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.main-nav.active {
+    right:0;
+    margin:auto;
+    margin-top: 100px;
+    width:100%;
+}
+
+.hamburger {
+    display: inline;
+    margin-top: 2.25rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #0ebd60;
 }
 
 #nav-menu {
@@ -313,11 +360,14 @@ footer {
 .error-msg {
     padding: 2rem;
     margin: auto;
+    margin-bottom: 5rem;
     display: flex;
+    flex: 1 0 auto;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     width: 80%;
+    min-height: 75vh;
 }
 
 .error-msg h1 {
@@ -341,7 +391,7 @@ img.rounded {
 
 /* Laptop or desktop */
 @media (min-width: 1000px) {
-    /* make nav horizontal, keep pictures and friend pics to 3 per row */
+    /* make nav horizontal, no hamburger, keep pictures and friend pics to 3 per row */
       /* navigation menu */
 
     .content-container:not(#stats-container) {
@@ -376,7 +426,10 @@ img.rounded {
     .logo2 {
         display: none;
     }
-
+    .main-nav {
+        position: unset;
+        background-color: unset;
+    }
     #nav-menu {
         flex-direction: row;
         width: 100%;
@@ -394,6 +447,10 @@ img.rounded {
     #nav-menu li a {
         width: 100%;
         color: #eff4ed;
+    }
+
+    .hamburger {
+        display:none;
     }
 
     #main-container {
