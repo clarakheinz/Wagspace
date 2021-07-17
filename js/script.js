@@ -39,7 +39,7 @@ for (let i=0; i < friends.length; i++) {
 
 let featuredPics = [
     {photo: "./img/featured-pics/featured-1.jpeg", alt: "Thor laying on a rug"},
-    {photo: './img/featured-pics/featured-2.jpg', alt: "Thor laying on his back like a person, sprawled out"},
+    {photo: './img/featured-pics/featured-2.JPG', alt: "Thor laying on his back like a person, sprawled out"},
     {photo: './img/featured-pics/featured-3.jpeg', alt: "Thor looking sad while Loki sniffs at his whipped cream dessert"},
     {photo: './img/featured-pics/featured-4.jpeg', alt: "Young Thor trying to sleep in too small a dog bed"},
     {photo: './img/featured-pics/featured-5.jpeg', alt: "Baby Thor sleeping hard, conked out"},
