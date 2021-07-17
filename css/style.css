@@ -309,6 +309,34 @@ footer {
     max-width: 200px;
 }
 
+/* error page */
+.error-msg {
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+}
+
+.error-msg h1 {
+    color: #0ebd60;
+    font-size: 2.5rem;
+}
+
+.error-msg p {
+    color:#184c34;
+    font-size: 1.25rem;;
+}
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
 /* Media Queries */
 
 /* Laptop or desktop */
