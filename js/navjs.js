@@ -1,4 +1,4 @@
-let hamburger = document.querySelector(".hamburger");
+let hamburger = document.querySelector(".hamburger-icon");
 let navi = document.querySelector(".main-nav");
 
 hamburger.addEventListener("click", toggleMenu);
