@@ -301,24 +301,28 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
 }
-#msg input:not(#submit) {
+#msg input[type="text"] {
     border-radius: 5px;
     border: rgba(24, 76, 52, 0.5) solid 2px;
     font-size: 0.8rem;
+    outline: none;
 }
 
-#msg input:focus, #message:focus {
+#msg input[type="text"]:focus, #message:focus {
     border: rgba(24, 76, 52, 0.8) solid 2px;
     outline:none;
-
 }
 
 #msg h3 {
     width: 100%;
 }
 
-#msg label[for="name"], label[for=email] {
+#msg label[for="name"], label[for="email"] {
     width: 50%;
+}
+
+#msg label[for="email"] {
+    padding-left: 10px;
 }
 
 #msg label[for="message"] {
@@ -344,6 +348,11 @@ footer {
     font-size: .8rem;
     border: rgba(24, 76, 52, 0.5) solid 2px;
     border-radius:5px;
+}
+
+#submit {
+    width:115px;
+    font-size: 1rem;;
 }
 
 
