@@ -292,6 +292,9 @@ footer {
     display: none;
 }
 
+#msg {
+    display: none;
+}
 
 .close-btn {
     float: right;

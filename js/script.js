@@ -84,6 +84,10 @@ function invite() {
     document.getElementById("invite-msg").style.display = "block";
 }
 
+function message() {
+    modal.style.display = "block";
+    document.getElementById("msg").style.display = "block";
+}
 
 let closeBtn = document.querySelector(".close-btn");
 closeBtn.onclick = function(){
