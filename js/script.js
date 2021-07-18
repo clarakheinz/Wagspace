@@ -86,7 +86,7 @@ function invite() {
 
 function message() {
     modal.style.display = "block";
-    document.getElementById("msg").style.display = "block";
+    document.getElementById("msg").classList.add("active");
 }
 
 let closeBtn = document.querySelector(".close-btn");
@@ -94,5 +94,5 @@ closeBtn.onclick = function(){
     modal.style.display = "none"
     document.getElementById("add-friend-msg").style.display = "none";
     document.getElementById("already-friend").style.display = "none";
-    document.getElementById("invite-msg").style.display = "none";}
+    document.getElementById("invite-msg").classList.remove = "active";}
 

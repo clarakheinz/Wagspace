@@ -296,6 +296,57 @@ footer {
     display: none;
 }
 
+#msg.active {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#msg input:not(#submit) {
+    border-radius: 5px;
+    border: rgba(24, 76, 52, 0.5) solid 2px;
+    font-size: 0.8rem;
+}
+
+#msg input:focus, #message:focus {
+    border: rgba(24, 76, 52, 0.8) solid 2px;
+    outline:none;
+
+}
+
+#msg h3 {
+    width: 100%;
+}
+
+#msg label[for="name"], label[for=email] {
+    width: 50%;
+}
+
+#msg label[for="message"] {
+    width: 100%;
+}
+
+#msg #name, #email {
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    flex:1;
+    margin-bottom: 1.25rem;
+}
+
+#msg #name {
+    margin-right: 1rem;
+}
+
+#message {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    border: rgba(24, 76, 52, 0.5) solid 2px;
+    border-radius:5px;
+}
+
+
 .close-btn {
     float: right;
     color: rgba(24, 76, 52, 0.75);
@@ -310,8 +361,6 @@ footer {
     transform: rotate(360deg) scale(1.1);
     cursor: pointer;
 }
-
-
 
 #stats-container h5 {
     font-size: 1.15rem;
