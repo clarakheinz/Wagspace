@@ -292,9 +292,6 @@ footer {
     display: none;
 }
 
-#msg {
-    display:none;
-}
 
 .close-btn {
     float: right;
@@ -311,14 +308,7 @@ footer {
     cursor: pointer;
 }
 
-/* message form styling */
-.msg-input {
-    display: flex;
-    flex-wrap: wrap;
-}
-.msg-input>* {
-    flex: 1 1 160px'
-}
+
 
 #stats-container h5 {
     font-size: 1.15rem;

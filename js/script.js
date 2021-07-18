@@ -84,18 +84,11 @@ function invite() {
     document.getElementById("invite-msg").style.display = "block";
 }
 
-function message() {
-    modal.style.display = "block";
-    document.getElementById("msg").style.display = "block";
-}
-
 
 let closeBtn = document.querySelector(".close-btn");
 closeBtn.onclick = function(){
     modal.style.display = "none"
     document.getElementById("add-friend-msg").style.display = "none";
     document.getElementById("already-friend").style.display = "none";
-    document.getElementById("invite-msg").style.display = "none";
-    document.getElementsById("msg").style.display = "none";
-}
+    document.getElementById("invite-msg").style.display = "none";}
 
