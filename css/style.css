@@ -292,6 +292,10 @@ footer {
     display: none;
 }
 
+#msg {
+    display:none;
+}
+
 .close-btn {
     float: right;
     color: rgba(24, 76, 52, 0.75);
@@ -307,6 +311,14 @@ footer {
     cursor: pointer;
 }
 
+/* message form styling */
+.msg-input {
+    display: flex;
+    flex-wrap: wrap;
+}
+.msg-input>* {
+    flex: 1 1 160px'
+}
 
 #stats-container h5 {
     font-size: 1.15rem;

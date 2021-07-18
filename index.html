@@ -50,13 +50,27 @@
                         <p id="add-friend-msg">Thor is now your friend!</p>
                         <p id="already-friend">Thor is already your friend!</p>
                         <p id="invite-msg">You can't invite Thor to anything right now.</p>
+                        <form class="msg">
+                            <h3>Send Thor a message!</h3>
+                            <div class="msg-input">
+                                <label for="from">Your name:</label><br>
+                                <input type="text" id="from" name="from">
+                                <label for="fremail">Your email:</label>
+                                <input type="text" id="fremail" name="fremail"><br>
+                                <label for="subject">Subject:</label><br>
+                                <input type="text" id="subject" name="subject"><br>
+                                <label for="message">Message:</lable><br>
+                                <input type="text" id="message" name="message"><br><br>
+                                <input type="submit" value="Send Message!">
+                                </div>
+                        </form>
                     </div>
                 </div>
                 <div class="media2 container">
                     <div class="container content-container" id="actions-container">
                         <!--Message, add friend, invite "buttons"-->
                         <ul>
-                            <li id="open-form">Message</li>
+                            <li id="open-form" onclick="message()">Message</li>
                             <li id="add-friend" onclick="addFriend()">Add Friend</li>
                             <li id="invite" onclick="invite()">Invite</li>
                         </ul>
