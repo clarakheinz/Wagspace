@@ -96,3 +96,18 @@ closeBtn.onclick = function(){
     document.getElementById("already-friend").style.display = "none";
     document.getElementById("invite-msg").classList.remove = "active";}
 
+function validate() {
+    // check name, email, message
+    let fname = document.getElementById("name");
+    let femail = document.getElementById("email");
+    let fmessage = document.getElementById("message");
+    // regex to validate email
+    var reg = /[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]+$/;
+
+    if (femail.matches(reg)) {
+        //do things
+    }
+
+
+
+}
