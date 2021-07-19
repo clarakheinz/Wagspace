@@ -111,7 +111,6 @@ footer {
     right: -100%;
     margin-right: 1rem;
     padding-right: 1rem;
-    z-index: 10;
     transition: 0.45s;
     background-color: #fff;
 }
@@ -121,6 +120,7 @@ footer {
     margin:auto;
     margin-top: 100px;
     width:100%;
+    z-index: 10;
 }
 
 .hamburger-icon {
