@@ -73,22 +73,50 @@ function addFriend() {
     modal.style.display = "block";
     if (!friend) {
         document.getElementById("add-friend-msg").style.display = "block";
+        document.getElementById("add-friend-title").style.display = "block";
         friend = true;
     } else {
+        document.getElementById("add-friend-title").style.display = "block";
         document.getElementById("already-friend").style.display = "block";
     }
 }
 
 function invite() {
     modal.style.display = "block";
+    document.getElementById("invite-title").style.display = "block";
     document.getElementById("invite-msg").style.display = "block";
 }
 
+function message() {
+    modal.style.display = "block";
+    document.getElementById("msg").classList.add("active");
+}
 
 let closeBtn = document.querySelector(".close-btn");
 closeBtn.onclick = function(){
-    modal.style.display = "none"
+    modal.style.display = "none";
+    document.getElementById("add-friend-title").style.display = "none";
     document.getElementById("add-friend-msg").style.display = "none";
     document.getElementById("already-friend").style.display = "none";
-    document.getElementById("invite-msg").style.display = "none";}
+    document.getElementById("invite-title").style.display = "none";
+    document.getElementById("invite-msg").style.display = "none";
+    document.getElementById("msg").classList.remove = "active";
+}
 
+// let submit = document.getElementById("submit")
+
+// submit.addEventListener("click", validate);
+
+// function validate() {
+//     // check name, email, message
+//     let fname = document.getElementById("name");
+//     let femail = document.getElementById("email");
+//     let fmessage = document.getElementById("message");
+//     // regex to validate email
+//     var reg = /[A-Za-z0-9._-]+@[A-Za-z0-9._-]+.[A-Za-z0-9]+$/;
+
+//     if (!femail.matches(reg)) {
+//         //do thin
+//     }
+
+//}

@@ -161,28 +161,28 @@ footer {
     justify-content: center;
     width: 100%;
     font-size: 1.15rem;
-  }
+}
   
-  #nav-menu li {
+#nav-menu li {
     display: flex;
     justify-content: center;
     margin: 0.25rem;
     width: 100%;
-  }
+}
   
-  #nav-menu li a {
+#nav-menu li a {
     display: inline-block;
     padding: 1.05rem 1.15rem;
     text-decoration: none;
     text-align: center;
     width: 100%;
     color: #0ebd60;
-  }
+}
 
-  #nav-menu li a:hover {
+#nav-menu li a:hover {
     background-color: #0ebd60;
     color: #eff4ed;
-  }
+}
   
 
 #main-container {
@@ -269,17 +269,21 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0);
     background-color: rgba(0, 0, 0, 0.75);}
 
 .modal-content {
     position: relative;
     background-color: #eff4ed;
     margin: auto;
+    margin-top: 5rem;
     border-radius: 10px;
     color: #184c34;
     padding: 1.25rem;
     width: 75%;
+}
+
+#add-friend-title {
+    display: none;
 }
 
 #add-friend-msg {
@@ -288,6 +292,10 @@ footer {
 #already-friend {
     display: none;
 }
+#invite-title {
+    display: none;
+}
+
 #invite-msg {
     display: none;
 }
