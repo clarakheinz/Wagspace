@@ -26,7 +26,7 @@ main {
     flex-grow: 1;
 }
 
-h1, h3{
+h1, h2, h3 {
     font: bold 1.5rem Handlee;
 }
 
@@ -51,11 +51,6 @@ button {
     margin: 0;
 }
 
-/* div[class*="container"] {
-    border: #000 solid 2px;
-} */
-
-
 
 /* Class/ID Styles */
 .container {
@@ -78,7 +73,7 @@ button {
 
 .content-container:not(#actions-container):hover {
     border-color: white;
-    box-shadow: 0px 10px 10px #184c34;
+    box-shadow: 0px 10px 10px rgba(24, 76, 52, 0.5);
     transform: scale(1.025);
 }
 
@@ -206,9 +201,10 @@ button {
 
 
 .user-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
     align-self: center;
     margin: 0.75rem;
+    text-transform: uppercase;
 }
 
 .section-title {
