@@ -37,6 +37,20 @@ footer {
     flex-shrink: 0;
 }
 
+button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: Handlee;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: inherit;
+    padding:0;
+    margin: 0;
+}
+
 /* div[class*="container"] {
     border: #000 solid 2px;
 } */
@@ -130,19 +144,19 @@ footer {
     cursor: pointer;
 }
 
-.hamburger-icon.active .bar:nth-child(2) {
+.hamburger-icon.active .line:nth-child(2) {
     display:none;
 }
 
-.hamburger-icon.active .bar:nth-child(1) {
+.hamburger-icon.active .line:nth-child(1) {
     transform: rotate(45deg) translateY(5px) translateX(3.5px);
 }
 
-.hamburger-icon.active .bar:nth-child(3) {
+.hamburger-icon.active .line:nth-child(3) {
     transform: rotate(-45deg) translateY(-2px);
 }
 
-.bar {
+.line {
     display: block;
     width: 25px;
     height: 3px;
