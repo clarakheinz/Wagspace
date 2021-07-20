@@ -300,6 +300,76 @@ footer {
     display: none;
 }
 
+#msg {
+    display: none;
+}
+
+#msg.active {
+    display: flex;
+    flex-wrap: wrap;
+}
+#msg input[type="text"] {
+    border-radius: 5px;
+    border: rgba(24, 76, 52, 0.5) solid 2px;
+    font-size: 0.8rem;
+    outline: none;
+}
+
+#msg input[type="text"]:focus, #message:focus {
+    border: rgba(24, 76, 52, 0.8) solid 2px;
+    outline:none;
+}
+
+#msg h3 {
+    width: 100%;
+}
+
+#msg label {
+    width: 100%;
+    margin: 0;
+}
+
+#msg #name, #email {
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    flex:1;
+    margin-bottom: 1.25rem;
+}
+
+
+#msg label[for="email"], #email {
+    order:2;
+}
+
+#msg #name, label[for="name"] {
+    order:1;
+}
+
+#msg  #message, label[for="message"], #submit {
+    order: 3;
+}
+
+#message {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    border: rgba(24, 76, 52, 0.5) solid 2px;
+    border-radius:5px;
+}
+
+#submit {
+    width: 150px;
+    height: 30px;
+    background-color: #184c34;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    margin: auto;
+}
+
 
 .close-btn {
     float: right;
@@ -315,8 +385,6 @@ footer {
     transform: rotate(360deg) scale(1.1);
     cursor: pointer;
 }
-
-
 
 #stats-container h5 {
     font-size: 1.15rem;
@@ -506,6 +574,28 @@ img.rounded {
         width: 50%;
     }
 
+    #msg label[for="email"], #email {
+        order:1;
+        width: 50%;
+    }
+    
+    #msg label[for="name"], #name {
+        order:1;
+        width: 50%;
+    }
+    
+    #msg #message, label[for="message"], #submit {
+        order: 1;
+    }
+    
+    #msg #email {
+        margin-left: 5px;
+    }
+
+    #msg label[for="message"]{
+        width: 100%;
+    } 
+
     #friends-container img {
         max-width: 175px;
     }
@@ -563,6 +653,33 @@ img.rounded {
         width: 50%;
     }
 
+    #msg label {
+        width: unset;
+    }
+
+    #msg label[for="name"], label[for="email"] {
+        width: 50%;
+    }
+
+    #msg label[for="email"], #email {
+        order:1;
+    }
+    
+    #msg #name, label[for="name"] {
+        order:1;
+    }
+    
+    #msg #message, label[for="message"], #submit {
+        order: 1;
+    }
+    
+    #msg #email {
+        margin-left: 5px;;
+    }
+
+    #msg label[for="message"]{
+        width: 100%;
+    } 
     #friends-container figure {
         padding: 0; 
         padding-bottom: 1.75rem;
