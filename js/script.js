@@ -94,20 +94,30 @@ closeBtn.onclick = function(){
     modal.style.display = "none"
     document.getElementById("add-friend-msg").style.display = "none";
     document.getElementById("already-friend").style.display = "none";
-    document.getElementById("invite-msg").classList.remove = "active";}
+    document.getElementById("invite-msg").classList.remove = "active";
+}
+
+
 
 function validate() {
     // check name, email, message
-    let fname = document.getElementById("name");
-    let femail = document.getElementById("email");
-    let fmessage = document.getElementById("message");
+    let fname = document.getElementById("name").value;
+    let femail = document.getElementById("email").value;
+    let fmessage = document.getElementById("message").value;
+    console.log(fname);
     // regex to validate email
-    var reg = /[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]+$/;
+    var reg = /[A-Za-z0-9.!#&{}|()-_]+@[A-Za-z0-9]+.[A-Za-z0-9]+$/;
 
-    if (femail.matches(reg)) {
-        //do things
+    if (!femail.match(reg)||femail==null) {
+        alert("Please input a valid email!");
+        return false;
+    } else if (fname === "" || fname==null) {
+        alert("Don't forget to input your name!");
+        return false;
+    } else if (fmessage === "" || fmessage==null) {
+        alert("You can't leave your message blank!");
+        return false;
+    } else {
+        return true;
     }
-
-
-
 }

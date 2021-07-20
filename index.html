@@ -50,7 +50,7 @@
                         <p id="add-friend-msg">Thor is now your friend!</p>
                         <p id="already-friend">Thor is already your friend!</p>
                         <p id="invite-msg">You can't invite Thor to anything right now.</p>
-                        <form id="msg" onsumbit="return validate()">
+                        <form id="msg" action="mailto:clarakheinz@gmail.com?subject=Wagspace-Message to Thor" enctype="text/plain" method="post" onsubmit="return validate()">
                             <h3>Send Thor a message!</h3>
                             <label for="name">Your name:</label>
                             <label for="email">Your email:</label>
@@ -58,7 +58,7 @@
                             <input type="text" id="email" name="email">
                             <label for="message">Message:</label>
                             <textarea id="message" name="message"></textarea>
-                            <button type="submit" id="submit">Send message</button>
+                            <input type="submit" id="submit" value="Send message">
                         </form>
                     </div>
                 </div>
