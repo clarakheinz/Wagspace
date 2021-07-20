@@ -33,7 +33,7 @@ for (let i=0; i < friends.length; i++) {
     if (i === 2) {
         friendContainer.innerHTML +=(`<div class="break"></div>`);
     }
-}
+};
 
 // similar loop for featured pictures as profile-pic
 
@@ -93,12 +93,15 @@ function message() {
 }
 
 let closeBtn = document.querySelector(".close-btn");
-closeBtn.onclick = function(){
+closeBtn.addEventListener("click", closeModal);
+function closeModal(){
     modal.style.display = "none";
     document.getElementById("add-friend-title").style.display = "none";
     document.getElementById("add-friend-msg").style.display = "none";
     document.getElementById("already-friend").style.display = "none";
-    document.getElementById("invite-msg").classList.remove = "active";
+    document.getElementById("invite-title").style.display = "none";
+    document.getElementById("invite-msg").style.display = "none";
+    document.getElementById("msg").classList.remove = "active";
 }
 
 

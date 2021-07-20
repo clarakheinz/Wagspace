@@ -8,6 +8,7 @@ function toggleMenu() {
     navi.classList.toggle("active");
 }
 
+// get the nav links to close the menu on click//
 let navLink = document.querySelectorAll(".menu-item");
 
 for (let i=0; i < navLink.length; i++) {
