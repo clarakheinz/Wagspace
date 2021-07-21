@@ -396,10 +396,10 @@ button {
     cursor: pointer;
 }
 
-#stats-container h5 {
+#stats-container h3 {
     font-size: 1.15rem;
     margin: 0.2rem;
-    padding: 0.5rem;
+    padding: .5rem 1rem;
 }
 
 #stats-container p {
