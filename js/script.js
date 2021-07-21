@@ -1,29 +1,4 @@
-// nav functions
-let hamburger = document.querySelector(".hamburger-icon");
-let navi = document.querySelector(".main-nav");
-
-hamburger.addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-    hamburger.classList.toggle("active");
-    navi.classList.toggle("active");
-}
-
-// get the nav links to close the menu on click//
-let navLink = document.querySelectorAll(".menu-item");
-
-for (let i=0; i < navLink.length; i++) {
-    navLink[i].addEventListener("click", closeMenu)
-};
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navi.classList.remove("active");
-}
-
-
-// need to create function to insert a random picture for profle
-//get html elemet
+//index functions
 let profileContainer = document.getElementById("name-pic");
 //function to generate the random profile picture to insert
 function getProfilePic() {
@@ -46,6 +21,7 @@ let friends = [
     {name: "Blue", photo: "./img/friends/Blue.jpeg"},
     {name:"Lily", photo: "./img/friends/Lily.jpeg"}
 ];
+
 
 let friendContainer = document.getElementById("friends-container");
 
@@ -152,3 +128,4 @@ function validate() {
         return true;
     }
 }
+
