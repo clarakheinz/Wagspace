@@ -1,7 +1,7 @@
 # Wagspace
 ### A parody social media profile page for the best boy.
 ---------------------------------------------------------
-#### As a part of Code Louisville's Front End Development program, we are required to create a final project demonstrating the skills acquired during the 12 week course. I have chosen a simple but fun concept to run with, a pseudo social media site for our pets! This demo is a profile page that shows a clean layout with buttons that provide simple functionality to interact with your friends online.
+#### As a part of Code Louisville's Front End Development program, we are required to create a final project demonstrating the skills acquired during the 12 week course. I have chosen a simple but fun concept to run with, a pseudo social media site for our pets! This demo is a profile page that shows a clean layout with buttons that provide simple functionality to interact with your friends.
 
 This site is hosted by GitHub Pages, to access the site please [click here](https://clarakheinz.github.io/Wagspace/).
 
