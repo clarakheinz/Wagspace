@@ -18,8 +18,8 @@ Skills demonstrated include:
     * Navigation become simple row style for large screens 1000px and above
 4. JavaScript function to dynamically insert HTML code:
     * Insert a random profile picture from a set of 4
-    * Insert friend profile pictures
-    * Insert featured pictures in Thor's pictures
+    * Insert friend profile pictures and names from array of JS objects
+    * Insert featured pictures in Thor's pictures from array of objects with alt text
 5. Javscript to show and hide HTML
     * When "Add Friend" or "Invite" buttons are clicked, JS functions show and hide different messages in a pop-up/modal window
     * When "Message" is clicked, JS function shows HTML form where Name, Email, and Message fields are validated 

@@ -35,10 +35,11 @@
             </nav>
         </header>
         <main>
-            <!--5 flexboxes, in column orientation by default for mobile first-->
+            <!--flexboxes for all main page content, in column orientation by default for mobile first-->
             <div class="container" id="main-container">
+                <!--Name, Profile pic, mini status-->
                 <div class="container content-container" id="profile">
-                    <!--Name, Profile pic, mini status-->
+                    <!--Name and profile pic container. Profile pic inserted dynamically with JS-->
                     <div id="name-pic">
                         <h2 class="user-name">Thor</h2>
                     </div>
@@ -46,6 +47,7 @@
                         <p>Doing what the goodest boi does.</p>
                     </div>
                 </div>
+                <!--Modal content for buttons-->
                 <div class="modalContainer">
                     <div class="modal-content">
                         <span class="close-btn">&times;</span>
@@ -66,6 +68,7 @@
                         </form>
                     </div>
                 </div>
+                <!--Container for bio and buttons-->
                 <div class="media2 container">
                     <div class="container content-container" id="actions-container">
                         <!--Message, add friend, invite "buttons"-->
@@ -76,10 +79,9 @@
                         </ul>
                     </div>
                     <div class="container content-container" id="stats-container">
-                        <!-- About me, likes, etc-->
+                        <!-- Container for bio-->
                         <h2 class="section-title">About Thor</h2>
                         <h3>Hi there! I'm Thor, the goodest boi as my mom says.</h3>
-                        <!--create tble of age, sex, breed, etc.-->
                         <p>Oh boy, I love meeting new people and getting them to play fetch with me. 
                             I've never met a stranger! I always have good manners greet everyone with a good 
                             sniff of the tush. Running around like a new born pup is all I ever do. 
@@ -87,18 +89,18 @@
                     </div>
                 </div>
                 <div class="container content-container" id="friends-container">
-                    <!-- top X friends, images and names-->
+                    <!-- top friends, images and names inserted dynamically-->
                     <h2 class="section-title">
                         Thor's Top Friends
                     </h2>
                 </div>
                 <div class="container content-container" id="pictures-container">
-                    <!--handful of featured pics with like functionality-->
+                    <!--handful of featured pics inserted dynamically-->
                     <h2 class="section-title">Thor's Pictures</h2>
                 </div>
             </div>
         </main>
-        <footer><!--Wagspace Copyright, maybe logo and my contact info-->
+        <footer><!--Wagspace Copyright-->
             <p>&copy; 2021 Clara Heinz</p>
         </footer>
     </body>
