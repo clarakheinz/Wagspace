@@ -481,6 +481,11 @@ img.rounded {
 @media (min-width: 1000px) {
     /* make nav horizontal, no hamburger, keep pictures and friend pics to 3 per row */
       /* navigation menu */
+    
+    main {
+          width: 80vw;
+          margin: 0 auto;
+      }
 
     .content-container:not(#stats-container) {
         margin-bottom: 2.5rem;

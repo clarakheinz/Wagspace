@@ -1,4 +1,4 @@
-//index functions
+// grab profile pic container
 let profileContainer = document.getElementById("name-pic");
 //function to generate the random profile picture to insert
 function getProfilePic() {
@@ -9,10 +9,12 @@ function getProfilePic() {
     pic.alt = "Thor's profile picture (yellow labrador dog)";
     profileContainer.appendChild(pic);
 }
-
+//run getProfilePic function
 getProfilePic();
 
 //loop to fill friends into respective elements by ID
+
+//JS array of objects
 let friends = [
     {name: "Georgia" , photo: "./img/friends/Georgia.jpeg"},
     {name: "Loki" , photo: "./img/friends/Loki.jpeg"},
@@ -36,7 +38,7 @@ for (let i=0; i < friends.length; i++) {
 };
 
 // similar loop for featured pictures as profile-pic
-
+// JS array of objects
 let featuredPics = [
     {photo: "./img/featured-pics/featured-1.jpeg", alt: "Thor laying on a rug"},
     {photo: './img/featured-pics/featured-2.JPG', alt: "Thor laying on his back like a person, sprawled out"},
@@ -52,6 +54,7 @@ let featuredPics = [
     {photo: './img/featured-pics/featured-12.jpeg', alt: "Thor lounging with his dachshund girlfriend, Georgia"}
 ];
 
+//similar function to populate featured pictures
 let featuredContainer = document.getElementById("pictures-container");
 function fillPictures() {
     for (let i=0; i < featuredPics.length; i++) {
@@ -64,9 +67,10 @@ function fillPictures() {
 fillPictures();
 
 
-//need javascript button functions
+//button functions to show hide messages as appropriate
 
-//add friend
+//add friend function
+// set friend to false for the already friend message functionality
 let friend = false;
 let modal = document.querySelector(".modalContainer");
 function addFriend() {
@@ -81,17 +85,20 @@ function addFriend() {
     }
 }
 
+//invite function
 function invite() {
     modal.style.display = "block";
     document.getElementById("invite-title").style.display = "block";
     document.getElementById("invite-msg").style.display = "block";
 }
 
+//show message HTML form function
 function message() {
     modal.style.display = "block";
     document.getElementById("msg").classList.add("active");
 }
 
+//close button function to set everything that could be shown to hide
 let closeBtn = document.querySelector(".close-btn");
 closeBtn.addEventListener("click", closeModal);
 function closeModal(){
@@ -105,7 +112,7 @@ function closeModal(){
 }
 
 
-
+//function to validate HTML form fields
 function validate() {
     // check name, email, message
     let fname = document.getElementById("name").value;
