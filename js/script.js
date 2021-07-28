@@ -108,7 +108,7 @@ function closeModal(){
     document.getElementById("already-friend").style.display = "none";
     document.getElementById("invite-title").style.display = "none";
     document.getElementById("invite-msg").style.display = "none";
-    document.getElementById("msg").classList.remove = "active";
+    document.getElementById("msg").classList.remove("active");
 }
 
 
