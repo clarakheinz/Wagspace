@@ -13,6 +13,7 @@ Skills demonstrated include:
     * 750px to 999px screen width - Main layout becomes 2 columns
     * 1000px or greater screen width - Navigation becomes a row layout
 2. Use of FlexBox to control layout changes
+    * The green action buttons swap order with the bio div in the column layout
 3. Navigation changes layout in response to screen widths
     * Hamburger navigation for screens under 1000px in width 
     * Navigation become simple row style for large screens 1000px and above
