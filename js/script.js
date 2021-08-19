@@ -58,14 +58,35 @@ let featuredPics = [
 let featuredContainer = document.getElementById("pictures-container");
 function fillPictures() {
     for (let i=0; i < featuredPics.length; i++) {
-        let pic = document.createElement("img");
-        pic.src = `${featuredPics[i].photo}`;
-        pic.alt = `${featuredPics[i].alt}`;
-        featuredContainer.appendChild(pic);
+        let picHolder = document.createElement("div");
+        picHolder.classList.add("picture-holder");
+        picHolder.innerHTML = `<img src=${featuredPics[i].photo} alt=${featuredPics[i].alt}><span class="like-btn"><i class="far fa-heart fa-2x"></i></span>`
+        featuredContainer.appendChild(picHolder);
     }
 }
 fillPictures();
 
+// Like button functionality
+let btns = document.querySelectorAll(".like-btn");
+console.log(btns);
+btns.forEach(function(span) {
+  span.addEventListener("click", function() {
+    like(span)
+  });
+});
+
+function like(b) {
+  console.log(b);
+  let icon = b.querySelector("i");
+  console.log(icon);
+  if (icon.classList.contains("far")){
+    icon.classList.add("fas");
+    icon.classList.remove("far");
+  } else {
+    icon.classList.add("far");
+    icon.classList.remove("fas");
+  }
+};
 
 //button functions to show hide messages as appropriate
 

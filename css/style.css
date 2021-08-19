@@ -444,6 +444,29 @@ button {
     max-width: 200px;
 }
 
+.picture-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .far {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .fas {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .fa-heart {
+      transition: transform 0.25s ease-in-out;
+  
+  }
+  .fa-heart:hover {
+    transform: scale(1.25);
+  }
+
 /* error page */
 .error-msg {
     padding: 2rem;
@@ -465,7 +488,7 @@ button {
 
 .error-msg p {
     color:#184c34;
-    font-size: 1.25rem;;
+    font-size: 1.25rem;
 }
 
 img.rounded {
