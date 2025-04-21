@@ -26,5 +26,5 @@ Skills demonstrated include:
     * When "Message" is clicked, JS function shows HTML form where Name, Email, and Message fields are validated
   
 
-###Goals
+### Goals
 Make this bad boy a full application. A web app coming soon.
