@@ -23,4 +23,8 @@ Skills demonstrated include:
     * Insert featured pictures in Thor's pictures from array of objects with alt text
 5. Javscript to show and hide HTML
     * When "Add Friend" or "Invite" buttons are clicked, JS functions show and hide different messages in a pop-up/modal window
-    * When "Message" is clicked, JS function shows HTML form where Name, Email, and Message fields are validated 
+    * When "Message" is clicked, JS function shows HTML form where Name, Email, and Message fields are validated
+  
+
+###Goals
+Make this bad boy a full application. A web app coming soon.
